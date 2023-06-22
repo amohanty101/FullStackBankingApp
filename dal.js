@@ -1,6 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
 //const url = 'mongodb+srv://anjalimohanty101:anjupratabcd1234@cluster0.tyorkve.mongodb.net/';
-const url = 'mongodb+srv://anjalimohanty101:anjuprat191972@cluster1.p3zdscx.mongodb.net/?retryWrites=true&w=majority'
+//const url = 'mongodb+srv://anjalimohanty101:anjuprat191972@cluster1.p3zdscx.mongodb.net/?retryWrites=true&w=majority'
+const url = process.env.MONGODB_URI;
 
 const client = new MongoClient(url);
 const dbName = "betterbank";
